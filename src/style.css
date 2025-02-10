@@ -38,6 +38,7 @@ div#content {
     justify-content: center;
     align-items: center;
     padding: 2rem 4rem;
+    gap: 1rem;
 }
 
 .text-section {
@@ -85,4 +86,20 @@ img {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+div.menu-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    gap: 1rem;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    border: 1px solid red;
 }
