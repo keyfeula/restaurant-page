@@ -74,7 +74,165 @@ export const loadMenuTab = () => {
     appItem6.append(appItem6Description);
     itemContainer.append(appItem6);
 
-
     menuContainer.append(appetizersContainer);
+
+
+    const entreesContainer = document.createElement("div");
+    entreesContainer.classList.add("entrees", "menu-category");
+    const entreesHeader = document.createElement("h3");
+    entreesHeader.textContent = "Entrees";
+    entreesContainer.append(entreesHeader);
+    const itemContainerEntrees = document.createElement("div");
+    itemContainerEntrees.classList.add("item-container");
+    entreesContainer.append(itemContainerEntrees);
+
+    const entreeItem1 = document.createElement("div");
+    entreeItem1.classList.add("item");
+    const entreeItem1Header = document.createElement("h4");
+    entreeItem1Header.textContent = "Veggie Bowl";
+    entreeItem1.append(entreeItem1Header);
+    const entreeItem1Description = document.createElement("p");
+    entreeItem1Description.textContent = "A medley of steamed veggies (cabbage, zucchini, broccoli, & carrots) served on a bed of rice";
+    entreeItem1.append(entreeItem1Description);
+    itemContainerEntrees.append(entreeItem1);
+
+    const entreeItem2 = document.createElement("div");
+    entreeItem2.classList.add("item");
+    const entreeItem2Header = document.createElement("h4");
+    entreeItem2Header.textContent = "Chicken Teriyaki Bowl";
+    entreeItem2.append(entreeItem2Header);
+    const entreeItem2Description = document.createElement("p");
+    entreeItem2Description.textContent = "Grilled, all-natural chicken with our signature sauce and served on a bed of rice";
+    entreeItem2.append(entreeItem2Description);
+    itemContainerEntrees.append(entreeItem2);
+
+    const entreeItem3 = document.createElement("div");
+    entreeItem3.classList.add("item");
+    const entreeItem3Header = document.createElement("h4");
+    entreeItem3Header.textContent = "Yakitori";
+    entreeItem3.append(entreeItem3Header);
+    const entreeItem3Description = document.createElement("p");
+    entreeItem3Description.textContent = "5 juicy grilled chicken swekers glazed with our signature sauce";
+    entreeItem3.append(entreeItem3Description);
+    itemContainerEntrees.append(entreeItem3);
+
+    const entreeItem4 = document.createElement("div");
+    entreeItem4.classList.add("item");
+    const entreeItem4Header = document.createElement("h4");
+    entreeItem4Header.textContent = "Tonkotsu Pork Ramen";
+    entreeItem4.append(entreeItem4Header);
+    const entreeItem4Description = document.createElement("p");
+    entreeItem4Description.textContent = "Chashu, egg, black mushroom, crispy onion, green onion, black garlic oil";
+    entreeItem4.append(entreeItem4Description);
+    itemContainerEntrees.append(entreeItem4);
+
+    const entreeItem5 = document.createElement("div");
+    entreeItem5.classList.add("item");
+    const entreeItem5Header = document.createElement("h4");
+    entreeItem5Header.textContent = "Spicy Tuna Roll";
+    entreeItem5.append(entreeItem5Header);
+    const entreeItem5Description = document.createElement("p");
+    entreeItem5Description.textContent = "8 spicy yellowfin tuna rolls served with a side of miso soup";
+    entreeItem5.append(entreeItem5Description);
+    itemContainerEntrees.append(entreeItem5);
+
+    menuContainer.append(entreesContainer);
+
+
+    const dessertsContainer = document.createElement("div");
+    dessertsContainer.classList.add("desserts", "menu-category");
+    const dessertsContainerHeader = document.createElement("h3");
+    dessertsContainerHeader.textContent = "Desserts";
+    dessertsContainer.append(dessertsContainerHeader);
+    const itemContainerDesserts = document.createElement("div");
+    itemContainerDesserts.classList.add("item-container");
+    dessertsContainer.append(itemContainerDesserts);
+
+    const dessertItem1 = document.createElement("div");
+    dessertItem1.classList.add("item");
+    const dessertItem1Header = document.createElement("h4");
+    dessertItem1Header.textContent = "Matcha Ice Cream";
+    const dessertItem1Description = document.createElement("p");
+    dessertItem1Description.textContent = "Ice cream made from authentic Japanese matcha";
+    dessertItem1.append(dessertItem1Header);
+    dessertItem1.append(dessertItem1Description);
+    itemContainerDesserts.append(dessertItem1);
+
+    const dessertItem2 = document.createElement("div");
+    dessertItem2.classList.add("item");
+    const dessertItem2Header = document.createElement("h4");
+    dessertItem2Header.textContent = "Japanese Cheesecake";
+    const dessertItem2Description = document.createElement("p");
+    dessertItem2Description.textContent = "Combining elements of a rich, velvety custard and a pillowy, cottony sponge cake with a slightly tart flavor";
+    dessertItem2.append(dessertItem2Header);
+    dessertItem2.append(dessertItem2Description);
+    itemContainerDesserts.append(dessertItem2);
+
+    const dessertItem3 = document.createElement("div");
+    dessertItem3.classList.add("item");
+    const dessertItem3Header = document.createElement("h4");
+    dessertItem3Header.textContent = "Red Bean Bun";
+    const dessertItem3Description = document.createElement("p");
+    dessertItem3Description.textContent = "Soft, fluffy steamed buns filled with sweet, creamy red bean paste";
+    dessertItem3.append(dessertItem3Header);
+    dessertItem3.append(dessertItem3Description);
+    itemContainerDesserts.append(dessertItem3);
+
+    menuContainer.append(dessertsContainer);
+
+
+    const beveragesContainer = document.createElement("div");
+    beveragesContainer.classList.add("beverages", "menu-category");
+    const beveragesContainerHeader = document.createElement("h3");
+    beveragesContainerHeader.textContent = "Beverages";
+    beveragesContainer.append(beveragesContainerHeader);
+    const itemContainerBeverages = document.createElement("div");
+    itemContainerBeverages.classList.add("item-container");
+    beveragesContainer.append(itemContainerBeverages);
+
+    const beverageItem1 = document.createElement("div");
+    beverageItem1.classList.add("item");
+    const beverageItem1Header = document.createElement("h4");
+    beverageItem1Header.textContent = "Green Tea";
+    const beverageItem1Description = document.createElement("p");
+    beverageItem1Description.textContent = "Sencha green tea served iced or hot";
+    beverageItem1.append(beverageItem1Header);
+    beverageItem1.append(beverageItem1Description);
+    itemContainerBeverages.append(beverageItem1);
+
+    const beverageItem2 = document.createElement("div");
+    beverageItem2.classList.add("item");
+    const beverageItem2Header = document.createElement("h4");
+    beverageItem2Header.textContent = "Sake";
+    const beverageItem2Description = document.createElement("p");
+    beverageItem2Description.textContent = "Premium junmai sake from Japan";
+    beverageItem2.append(beverageItem2Header);
+    beverageItem2.append(beverageItem2Description);
+    itemContainerBeverages.append(beverageItem2);
+
+    const beverageItem3 = document.createElement("div");
+    beverageItem3.classList.add("item");
+    const beverageItem3Header = document.createElement("h4");
+    beverageItem3Header.textContent = "Fountain Drink";
+    const beverageItem3Description = document.createElement("p");
+    beverageItem3Description.textContent = "Coke, Sprite, Dr Pepper, or Fanta";
+    beverageItem3.append(beverageItem3Header);
+    beverageItem3.append(beverageItem3Description);
+    itemContainerBeverages.append(beverageItem3);
+
+    const beverageItem4 = document.createElement("div");
+    beverageItem4.classList.add("item");
+    const beverageItem4Header = document.createElement("h4");
+    beverageItem4Header.textContent = "Yuzu Lemonade";
+    const beverageItem4Description = document.createElement("p");
+    beverageItem4Description.textContent = "Lemonade made from the Japanese yuzu fruit";
+    beverageItem4.append(beverageItem4Header);
+    beverageItem4.append(beverageItem4Description);
+    itemContainerBeverages.append(beverageItem4);
+
+    menuContainer.append(beveragesContainer);
+
+
+
     content.append(menuContainer);
 };

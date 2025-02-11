@@ -37,7 +37,7 @@ div#content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 4rem;
     gap: 1rem;
 }
 
@@ -55,13 +55,11 @@ div#content {
 }
 
 nav button {
-    border: none;
+    border: 1px solid var(--eggshell-white);
+    border-bottom: none;
     padding: 1rem;
     width: 8rem;
     font-size: 1.5rem;
-}
-
-nav button.home-btn {
     background: var(--eggshell-white);
 }
 
@@ -113,7 +111,8 @@ div.menu-category {
 .item-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    gap: 1rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
     width: 100%;
 }
 
@@ -121,4 +120,8 @@ div.menu-category {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.item p {
+    text-align: center;
 }
