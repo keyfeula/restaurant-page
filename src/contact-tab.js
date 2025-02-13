@@ -18,6 +18,7 @@ export const loadContactTab = () => {
     firstNameLabel.textContent = "First Name";
     const firstNameInput = document.createElement("input");
     firstNameInput.setAttribute("id", "firstName");
+    firstNameInput.setAttribute("maxlength", "20");
 
     const lastNameContainer = document.createElement("div");
     lastNameContainer.classList.add("last-name-container");
@@ -26,6 +27,7 @@ export const loadContactTab = () => {
     lastNameLabel.textContent = "Last Name";
     const lastNameInput = document.createElement("input");
     lastNameInput.setAttribute("id", "lastName");
+    lastNameInput.setAttribute("maxlength", "20");
 
     contactForm.append(nameField);
     nameField.append(firstNameContainer);
@@ -43,6 +45,7 @@ export const loadContactTab = () => {
     const emailInput = document.createElement("input");
     emailInput.setAttribute("id", "email");
     emailInput.setAttribute("type", "email");
+    emailInput.setAttribute("maxlength", "20");
     emailField.append(emailLabel);
     emailField.append(emailInput);
     contactForm.append(emailField);
@@ -54,6 +57,7 @@ export const loadContactTab = () => {
     subjectLabel.textContent = "Subject";
     const subjectInput = document.createElement("input");
     subjectInput.setAttribute("id", "subject");
+    subjectInput.setAttribute("maxlength", "20");
     subjectField.append(subjectLabel);
     subjectField.append(subjectInput);
     contactForm.append(subjectField);
@@ -65,9 +69,18 @@ export const loadContactTab = () => {
     messageLabel.textContent = "Message";
     const messageInput = document.createElement("textarea");
     messageInput.setAttribute("id", "message");
+    messageInput.setAttribute("maxlength", "300");
     messageField.append(messageLabel);
     messageField.append(messageInput);
     contactForm.append(messageField);
+
+    const buttonContainer = document.createElement("div");
+    buttonContainer.classList.add("button-container");
+    const submitBtn = document.createElement("button");
+    submitBtn.setAttribute("type", "button");
+    submitBtn.textContent = "Submit";
+    buttonContainer.append(submitBtn);
+    contactForm.append(buttonContainer);
 
     content.append(contactContainer);
 };
