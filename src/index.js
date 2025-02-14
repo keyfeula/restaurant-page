@@ -1,3 +1,4 @@
+import "./style.css";
 import { loadInitialPage } from "./home-page-load";
 import  { loadMenuTab } from "./menu-tab";
 import { loadContactTab } from "./contact-tab";
